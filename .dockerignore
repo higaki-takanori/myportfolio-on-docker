@@ -1,0 +1,4 @@
+minnano_asobi/tmp/*
+minnano_asobi/log/*
+minnano_asobi/.git
+nginx
