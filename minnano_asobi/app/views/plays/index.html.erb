@@ -1,0 +1,52 @@
+<p id="notice"><%= notice %></p>
+
+<div class="order-md-1">
+  <h4 class="title mb-3">遊び一覧</h4>
+
+  <div class="search">
+    <%= form_with(model: @play, url: search_path, method: :get, local: true) do |form| %>
+      <div class="field mb-3">
+        <%= form.label :title, "タイトル" %>
+        <%= form.text_field :title, class: "form-control" %>
+      </div>
+      <div class="field mb-3">
+        <%= form.label :place, "場所" %>
+        <%= form.text_field :place, class: "form-control" %>
+      </div>
+      <div class="field mb-3">
+        <%= form.label :min_player, "最小人数" %>
+        <%= form.number_field :min_player, class: "form-control" %>
+      </div>
+
+      <div class="field mb-3">
+        <%= form.label :max_player, "最大人数" %>
+        <%= form.number_field :max_player, class: "form-control" %>
+      </div>
+      <div class="actions mb-3">
+        <%= form.submit "検索", class: "btn btn-success center" %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <hr class="py-0 my-4 my-sm-5">
+  </div>
+</div>
+
+<%= will_paginate %>
+
+<div class="index">
+  <% @plays.each do |play| %>
+    <%= link_to play_path(play) do %>
+      <%= render 'cards/card', play: play %>
+    <% end %>
+  <% end %>
+</div>
+
+<%= will_paginate %>
+
+<br>
+
+<%#= link_to 'New Play', new_play_path %>
