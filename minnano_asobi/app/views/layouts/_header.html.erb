@@ -1,0 +1,30 @@
+<!--<header class="navbar navbar-fixed-top navbar-inverse navbar-expand">-->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light justify-content-center" style="background-color: #e3f2fd;">
+    <div>
+      <%= link_to "みんなの遊び", root_path, id: "logo", class: "navbar-brand" %>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><%= link_to "Home", root_path, class: "nav-link" %></li>
+            <% if logged_in? %>
+              <li class="nav-item"><%= link_to "遊び一覧", plays_path, class: "nav-link" %></li>
+              <li class="nav-item"><%= link_to "遊びを投稿", new_play_path, data: {"turbolinks" => false}, class: "nav-link" %></li>
+              <li class="nav-item"><%= link_to 'ユーザー一覧', users_path, class: "nav-link" %></li>
+              <li class="nav-item"><%= link_to current_user, class: "nav-link" do %>
+                <%= "#{current_user.name}さん" %>
+                <%= image_tag current_user.image_url, size: "50x50" %>
+                <% end %>
+              </li>
+              <li class="nav-item"><%= link_to "ログアウト", logout_path, method: :delete, class: "nav-link btn btn-danger" %></li>
+            <% else %>
+              <li class="nav-item"><%= link_to "ログイン", login_path, data: {"turbolinks" => false}, class: "nav-link" %></li>
+              <li class="nav-item"><%= link_to "会員登録", new_user_path, class: "nav-link" %></li>
+            <% end %>
+          </ul>
+      </div>
+    </div>
+  </nav>
+</header>

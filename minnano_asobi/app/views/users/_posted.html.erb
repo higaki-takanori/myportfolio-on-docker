@@ -1,0 +1,7 @@
+<div class="index">
+  <% @user.plays.each do |play| %>
+      <%= link_to play_path(play) do %>
+        <%= render 'cards/card', play: play %>
+      <% end %>
+  <% end %>
+</div>

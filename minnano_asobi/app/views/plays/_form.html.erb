@@ -1,0 +1,102 @@
+<%= form_with(model: play, local: true) do |form| %>
+  <% if play.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= play.errors.count %>件のエラーが発生しました</h2>
+
+      <ul>
+        <% play.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field mb-3">
+    <%= form.label :title, "タイトル" %>
+    <%= form.text_field :title, class: "form-control" %>
+  </div>
+
+  <div class="field mb-3">
+    <%= form.label :play_image_path, "遊びのイメージ図" %>
+    <br>
+    <%= form.file_field :play_image_path %>
+  </div>
+
+  <div class="field mb-3">
+    <%= form.label :min_player, "最小人数" %>
+    <%= form.number_field :min_player, class: "form-control", id: "exampleFormControlSelect1" %>
+  </div>
+
+  <div class="field mb-3">
+    <%= form.label :max_player, "最大人数" %>
+    <%= form.number_field :max_player, class: "form-control", id: "exampleFormControlSelect1" %>
+  </div>
+
+  <div class="field mb-3">
+    <%= form.label :place, "場所" %>
+    <%= form.text_field :place, class: "form-control" %>
+  </div>
+
+  <div class="field mb-3">
+    <%= form.fields_for :tool do |tool| %>
+      <%= tool.label :tool_content, "道具" %>
+      <% unless play.tools.empty? %>
+        <%= tool.text_area :tool_content, value: play.tools[0].tool_content, class: "form-control" %>
+      <% else %>
+        <%= tool.text_area :tool_content, class: "form-control" %>
+      <% end %>
+    <% end %>
+  </div>
+
+  <div class="field mb-3">
+    <%= form.label :outline, "概要" %>
+    <%= form.text_area :outline, class: "form-control" %>
+  </div>
+
+  <div class="field">
+    <%#= form.label :user_id %>
+    <%= form.hidden_field :user_id, value: current_user.id %>
+  </div>
+
+  <div class="field">
+    <%#= form.label :deleted_at %>
+    <%#= form.datetime_select :deleted_at %>
+  </div>
+
+    <div class="field mb-3">
+      <%= form.fields_for :rule do |rule| %>
+        <div class="rule-form">
+          <% if play.rules.empty? %>
+            <div class="rule-list">
+              <%= rule.label :rule_content, "ルール" %>
+              <%= rule.text_area :rule_content, name: "rule[rule_content0][content]", class: "form-control" %>
+              <%= rule.file_field :rule_image_path, name: "rule[rule_content0][image]" %>
+              <button type="button" class="delete-form-btn btn btn-danger">このルールを削除</button>
+            </div>
+          <% else %>
+            <% play.rules.each_with_index do |rule_form, index|%>
+              <div class="rule-list">
+                <%= rule.label :rule_content, "ルール" %>
+                <%= rule.text_area :rule_content, name: "rule[rule_content#{index}][content]", value: rule_form.rule_content, class: "form-control" %>
+                <%= rule.file_field :rule_image_path, name: "rule[rule_content#{index}][image]", value: rule_form.rule_image_path %>
+                <button type="button" class="delete-form-btn btn btn-danger">このルールを削除</button>
+              </div>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="text-danger">
+          ルールを修正する場合は、画像を再アップロードしてください。
+        </div>
+      <% end %>
+      <button type="button" class="add-form-btn btn btn-primary">ルールを追加</button>
+    </div>
+  
+  <div class="field mb-3">
+    <%= form.label :winnig_content, "勝利条件" %>
+    <%= form.text_area :winnig_content, class: "form-control" %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "登録", class: "btn btn-success center" %>
+  </div>
+<% end %>

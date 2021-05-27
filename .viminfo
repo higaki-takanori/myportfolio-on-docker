@@ -1,0 +1,285 @@
+# この viminfo ファイルは Vim 8.1 によって生成されました.
+# 変更する際には十分注意してください!
+
+# Viminfo version
+|1,4
+
+# このファイルが書かれた時の 'encoding' の値
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~H
+# コマンドライン 項目の履歴 (新しいものから古いものへ):
+:q
+|2,0,1622043924,,"q"
+:wq
+|2,0,1622001653,,"wq"
+:.!q
+|2,0,1622001639,,".!q"
+:!q
+|2,0,1622001635,,"!q"
+
+# 検索文字列 項目の履歴 (新しいものから古いものへ):
+
+# 式 項目の履歴 (新しいものから古いものへ):
+
+# 入力行 項目の履歴 (新しいものから古いものへ):
+
+# デバッグ行 項目の履歴 (新しいものから古いものへ):
+
+# レジスタ:
+""-	CHAR	0
+	ん
+|3,1,36,0,1,0,1622001651,"ん"
+
+# ファイルマーク:
+'0  1  0  ~/myportfolio-on-docker/nginx/nginx.conf
+|4,48,1,0,1622043924,"~/myportfolio-on-docker/nginx/nginx.conf"
+'1  5  0  ~/myportfolio-on-docker/minnano_asobi/Dockerfile
+|4,49,5,0,1622001658,"~/myportfolio-on-docker/minnano_asobi/Dockerfile"
+'2  15  0  ~/myportfolio-on-docker/minnano_asobi/Dockerfile
+|4,50,15,0,1622001653,"~/myportfolio-on-docker/minnano_asobi/Dockerfile"
+'3  15  0  ~/myportfolio-on-docker/minnano_asobi/Dockerfile
+|4,51,15,0,1622001653,"~/myportfolio-on-docker/minnano_asobi/Dockerfile"
+'4  10  0  ~/myportfolio-on-docker/minnano_asobi/Dockerfile
+|4,52,10,0,1621943325,"~/myportfolio-on-docker/minnano_asobi/Dockerfile"
+'5  10  0  ~/myportfolio-on-docker/minnano_asobi/Dockerfile
+|4,53,10,0,1621943325,"~/myportfolio-on-docker/minnano_asobi/Dockerfile"
+'6  10  0  ~/myportfolio-on-docker/minnano_asobi/Dockerfile
+|4,54,10,0,1621943325,"~/myportfolio-on-docker/minnano_asobi/Dockerfile"
+'7  10  0  ~/myportfolio-on-docker/minnano_asobi/Dockerfile
+|4,55,10,0,1621943325,"~/myportfolio-on-docker/minnano_asobi/Dockerfile"
+'8  3  1  ~/.ssh/config
+|4,56,3,1,1621940952,"~/.ssh/config"
+'9  3  7  ~/.ssh/config
+|4,57,3,7,1621940935,"~/.ssh/config"
+
+# ジャンプリスト (新しいものが先):
+-'  1  0  ~/myportfolio-on-docker/nginx/nginx.conf
+|4,39,1,0,1622043924,"~/myportfolio-on-docker/nginx/nginx.conf"
+-'  5  0  ~/myportfolio-on-docker/minnano_asobi/Dockerfile
+|4,39,5,0,1622001658,"~/myportfolio-on-docker/minnano_asobi/Dockerfile"
+-'  5  0  ~/myportfolio-on-docker/minnano_asobi/Dockerfile
+|4,39,5,0,1622001658,"~/myportfolio-on-docker/minnano_asobi/Dockerfile"
+-'  15  0  ~/myportfolio-on-docker/minnano_asobi/Dockerfile
+|4,39,15,0,1622001654,"~/myportfolio-on-docker/minnano_asobi/Dockerfile"
+-'  15  0  ~/myportfolio-on-docker/minnano_asobi/Dockerfile
+|4,39,15,0,1622001654,"~/myportfolio-on-docker/minnano_asobi/Dockerfile"
+-'  15  0  ~/myportfolio-on-docker/minnano_asobi/Dockerfile
+|4,39,15,0,1622001653,"~/myportfolio-on-docker/minnano_asobi/Dockerfile"
+-'  15  0  ~/myportfolio-on-docker/minnano_asobi/Dockerfile
+|4,39,15,0,1622001653,"~/myportfolio-on-docker/minnano_asobi/Dockerfile"
+-'  10  0  ~/myportfolio-on-docker/minnano_asobi/Dockerfile
+|4,39,10,0,1622001562,"~/myportfolio-on-docker/minnano_asobi/Dockerfile"
+-'  10  0  ~/myportfolio-on-docker/minnano_asobi/Dockerfile
+|4,39,10,0,1622001562,"~/myportfolio-on-docker/minnano_asobi/Dockerfile"
+-'  10  0  ~/myportfolio-on-docker/minnano_asobi/Dockerfile
+|4,39,10,0,1622001562,"~/myportfolio-on-docker/minnano_asobi/Dockerfile"
+-'  10  0  ~/myportfolio-on-docker/minnano_asobi/Dockerfile
+|4,39,10,0,1622001562,"~/myportfolio-on-docker/minnano_asobi/Dockerfile"
+-'  10  0  ~/myportfolio-on-docker/minnano_asobi/Dockerfile
+|4,39,10,0,1621943325,"~/myportfolio-on-docker/minnano_asobi/Dockerfile"
+-'  10  0  ~/myportfolio-on-docker/minnano_asobi/Dockerfile
+|4,39,10,0,1621943325,"~/myportfolio-on-docker/minnano_asobi/Dockerfile"
+-'  1  0  ~/myportfolio-on-docker/minnano_asobi/Dockerfile
+|4,39,1,0,1621943297,"~/myportfolio-on-docker/minnano_asobi/Dockerfile"
+-'  1  0  ~/myportfolio-on-docker/minnano_asobi/Dockerfile
+|4,39,1,0,1621943297,"~/myportfolio-on-docker/minnano_asobi/Dockerfile"
+-'  1  0  ~/myportfolio-on-docker/minnano_asobi/Dockerfile
+|4,39,1,0,1621943297,"~/myportfolio-on-docker/minnano_asobi/Dockerfile"
+-'  1  0  ~/myportfolio-on-docker/minnano_asobi/Dockerfile
+|4,39,1,0,1621943297,"~/myportfolio-on-docker/minnano_asobi/Dockerfile"
+-'  1  0  ~/myportfolio-on-docker/minnano_asobi/Dockerfile
+|4,39,1,0,1621943297,"~/myportfolio-on-docker/minnano_asobi/Dockerfile"
+-'  1  0  ~/myportfolio-on-docker/minnano_asobi/Dockerfile
+|4,39,1,0,1621943297,"~/myportfolio-on-docker/minnano_asobi/Dockerfile"
+-'  3  1  ~/.ssh/config
+|4,39,3,1,1621940952,"~/.ssh/config"
+-'  3  1  ~/.ssh/config
+|4,39,3,1,1621940952,"~/.ssh/config"
+-'  3  1  ~/.ssh/config
+|4,39,3,1,1621940952,"~/.ssh/config"
+-'  3  1  ~/.ssh/config
+|4,39,3,1,1621940952,"~/.ssh/config"
+-'  3  1  ~/.ssh/config
+|4,39,3,1,1621940952,"~/.ssh/config"
+-'  3  1  ~/.ssh/config
+|4,39,3,1,1621940952,"~/.ssh/config"
+-'  3  1  ~/.ssh/config
+|4,39,3,1,1621940952,"~/.ssh/config"
+-'  3  1  ~/.ssh/config
+|4,39,3,1,1621940952,"~/.ssh/config"
+-'  3  1  ~/.ssh/config
+|4,39,3,1,1621940952,"~/.ssh/config"
+-'  3  1  ~/.ssh/config
+|4,39,3,1,1621940952,"~/.ssh/config"
+-'  3  1  ~/.ssh/config
+|4,39,3,1,1621940952,"~/.ssh/config"
+-'  3  1  ~/.ssh/config
+|4,39,3,1,1621940952,"~/.ssh/config"
+-'  3  1  ~/.ssh/config
+|4,39,3,1,1621940952,"~/.ssh/config"
+-'  3  1  ~/.ssh/config
+|4,39,3,1,1621940952,"~/.ssh/config"
+-'  3  1  ~/.ssh/config
+|4,39,3,1,1621940952,"~/.ssh/config"
+-'  3  1  ~/.ssh/config
+|4,39,3,1,1621940952,"~/.ssh/config"
+-'  3  7  ~/.ssh/config
+|4,39,3,7,1621940935,"~/.ssh/config"
+-'  3  7  ~/.ssh/config
+|4,39,3,7,1621940935,"~/.ssh/config"
+-'  3  7  ~/.ssh/config
+|4,39,3,7,1621940935,"~/.ssh/config"
+-'  3  7  ~/.ssh/config
+|4,39,3,7,1621940935,"~/.ssh/config"
+-'  3  7  ~/.ssh/config
+|4,39,3,7,1621940935,"~/.ssh/config"
+-'  3  7  ~/.ssh/config
+|4,39,3,7,1621940935,"~/.ssh/config"
+-'  3  7  ~/.ssh/config
+|4,39,3,7,1621940935,"~/.ssh/config"
+-'  3  7  ~/.ssh/config
+|4,39,3,7,1621940935,"~/.ssh/config"
+-'  3  7  ~/.ssh/config
+|4,39,3,7,1621940935,"~/.ssh/config"
+-'  3  7  ~/.ssh/config
+|4,39,3,7,1621940935,"~/.ssh/config"
+-'  3  7  ~/.ssh/config
+|4,39,3,7,1621940935,"~/.ssh/config"
+-'  3  7  ~/.ssh/config
+|4,39,3,7,1621940935,"~/.ssh/config"
+-'  3  7  ~/.ssh/config
+|4,39,3,7,1621940935,"~/.ssh/config"
+-'  3  7  ~/.ssh/config
+|4,39,3,7,1621940935,"~/.ssh/config"
+-'  3  7  ~/.ssh/config
+|4,39,3,7,1621940935,"~/.ssh/config"
+-'  3  7  ~/.ssh/config
+|4,39,3,7,1621940935,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  4  9  ~/.ssh/config
+|4,39,4,9,1621940907,"~/.ssh/config"
+-'  3  9  ~/.ssh/config
+|4,39,3,9,1621940702,"~/.ssh/config"
+-'  3  9  ~/.ssh/config
+|4,39,3,9,1621940702,"~/.ssh/config"
+-'  3  9  ~/.ssh/config
+|4,39,3,9,1621940702,"~/.ssh/config"
+-'  3  9  ~/.ssh/config
+|4,39,3,9,1621940702,"~/.ssh/config"
+-'  3  9  ~/.ssh/config
+|4,39,3,9,1621940702,"~/.ssh/config"
+-'  3  9  ~/.ssh/config
+|4,39,3,9,1621940702,"~/.ssh/config"
+-'  3  9  ~/.ssh/config
+|4,39,3,9,1621940702,"~/.ssh/config"
+-'  3  9  ~/.ssh/config
+|4,39,3,9,1621940702,"~/.ssh/config"
+-'  3  9  ~/.ssh/config
+|4,39,3,9,1621940702,"~/.ssh/config"
+-'  3  9  ~/.ssh/config
+|4,39,3,9,1621940702,"~/.ssh/config"
+-'  3  9  ~/.ssh/config
+|4,39,3,9,1621940702,"~/.ssh/config"
+-'  3  9  ~/.ssh/config
+|4,39,3,9,1621940702,"~/.ssh/config"
+-'  3  9  ~/.ssh/config
+|4,39,3,9,1621940702,"~/.ssh/config"
+-'  3  9  ~/.ssh/config
+|4,39,3,9,1621940702,"~/.ssh/config"
+-'  3  9  ~/.ssh/config
+|4,39,3,9,1621940702,"~/.ssh/config"
+-'  3  9  ~/.ssh/config
+|4,39,3,9,1621940702,"~/.ssh/config"
+-'  5  38  ~/.ssh/config
+|4,39,5,38,1621940653,"~/.ssh/config"
+
+# ファイル内マークの履歴 (新しいものから古いもの):
+
+> ~/myportfolio-on-docker/nginx/nginx.conf
+	*	1622043923	0
+	"	1	0
+
+> ~/myportfolio-on-docker/minnano_asobi/Dockerfile
+	*	1622001657	0
+	"	5	0
+	^	15	0
+	.	15	0
+	+	14	36
+	+	15	0
+	+	12	16
+	+	15	0
+
+> ~/.ssh/config
+	*	1621940951	0
+	"	3	1
+	^	3	2
+	.	3	1
+	+	5	0
+	+	5	38
+	+	5	0
+	+	1	21
+	+	3	1
