@@ -24,6 +24,9 @@ RUN apk update && \
     bundle install -j4 && \
     apk del build-dependencies
 
+RUN yarn install --check-files
+RUN yarn upgrade
+
 # Expose volumes to frontend
 VOLUME /app/public
 VOLUME /app/tmp

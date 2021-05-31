@@ -187,3 +187,176 @@ ls
 docker ps -a
 docker ps
 docker images
+cat myportfolio-on-docker/minnano_asobi/config/puma.rb 
+ruby 
+docker images
+docker-compose ps
+cd myportfolio-on-docker/
+docker-compose ps
+docker-compose help
+docker-compose logs
+docker-compose top
+docker-compose up
+ls
+mv * ../
+ls
+cd ../
+ls
+rm -rf myportfolio-on-docker/
+ls
+docker-compose ps
+docker-compose images
+docker-compose build
+sudo chown -R $USER /home/ec2-user/minnano_asobi/tmp/db
+docker-compose build
+docker-compose up
+ls
+git log
+ls
+git init
+ls
+git config --global user.name "higaki_takanori"
+git config --global user.email garoumare@gmail.com
+git add .
+git status
+ls -a
+ls
+git cd minnano_asobi/
+ls
+ls -a
+cd minnano_asobi/
+ls
+ls -a
+cat .gitignore 
+git commit -m "minnano_asobi on ec2"
+git log
+git remote
+git remote add origin git@github.com:higaki-takanori/myportfolio-on-docker.git
+git remote
+git remote add ec2 git@github.com:higaki-takanori/myportfolio-on-docker.git
+git remote
+git remote rm origin
+git remote
+git push 
+git push ec2 master
+git push ec2 ec2
+git checkout -b ec2
+git log
+git status
+git push 
+git push ec2 ec2
+docker-compose up
+vim config/database.yml 
+vi config/master.key 
+ls
+cat minnano_asobi/Dockerfile 
+vim minnano_asobi/Gemfile
+cat minnano_asobi/Gemfile
+docker-compose build
+sudo chown -R $USER /home/ec2-user/minnano_asobi/tmp/db
+docker-compose build
+docker-compose up
+ls
+ls -a minnano_asobi/
+vim .env
+cat .env 
+echo .env
+ls
+ls -a
+rm .env 
+cat minnano_asobi/.env 
+cat minnano_asobi/config/database.yml 
+clear
+cl
+cat docker-compose.yml 
+docker-compose run minnano_asobi rails assets:precompile
+docker-compose up
+cat minnano_asobi/config/webpacker.yml 
+docker ps
+docker exec -it fa90d2ce9233 bash
+docker exec -it fa90d2ce9233 sh
+ls
+sudo yum update
+docker-compose up
+rm -rf node_modules/
+rm yarn.lock
+docker-compose up
+docker-compose build
+docker-compose up
+docker-compose build
+sudo chown -R $USER /home/ec2-user/minnano_asobi/.ash_history 
+docker-compose build
+sudo chown -R $USER /home/ec2-user/minnano_asobi/tmp/db
+docker-compose build
+dokcer images
+dokcer image
+docker images
+docker ps
+docker ps-a
+docker ps -a
+docker rm a53b44c20e18
+docker ps -a
+docker rm 908ddd251108
+docker rm 5088d3f6da14
+df -f
+df 
+df -h
+docker rm 257978bb1e70
+docker ps -a
+docker rm 1b7bb0c7e3e1
+docker rm 5e49e282ad58 8ae1ac6a9e4e
+docker ps -a
+docker rm 2052172ea21a
+docker ps -a
+docker rm 5b2c4111f98d
+docker ps -a
+docker images
+docker rmi 9a683c7eb539 31dd4a5ca5fc 2f5c1a17d103 ae8cc600cc52
+docker images
+df -h
+docker-compose build
+docker-compose up
+rm -rf node_modules/
+rm yarn.lock
+docker-compose up
+vim minnano_asobi/Dockerfile 
+docker images
+df -h
+docker rmi 629978609d40
+df -h
+docker images
+docker-compose up
+docker-compose build
+sudo chown -R $USER /home/ec2-user/minnano_asobi/tmp/db
+docker-compose build
+docker-compose up
+vim minnano_asobi/Dockerfile 
+docker-compose build
+sudo chown -R $USER /home/ec2-user/minnano_asobi/tmp/db
+docker-compose build
+docker-compose up
+vim minnano_asobi/config/webpacker.yml 
+docker-compose up
+vim minnano_asobi/config/database.yml 
+clear
+docker-compose up
+vim minnano_asobi/config/database.yml 
+echo $DB_NAME
+vim minnano_asobi/config/database.yml 
+echo ENV['DB_NAME']
+echo $ENV['DB_NAME']
+cat minnano_asobi/.env 
+vim minnano_asobi/config/database.yml 
+docker-compose up
+vim minnano_asobi/config/database.yml 
+source minnano_asobi/.env 
+docker-compose up
+vim minnano_asobi/.env 
+cat minnano_asobi/.env 
+echo $DB_NAME
+psql
+sudo yum search postgresql
+df -h
+sudo yum -y install postgresql.x86_64
+psql -h db-minnano-asobi.cuxbtjsy2nad.ap-northeast-1.rds.amazonaws.com -U postgres -d db-minnano-asobi
+psql -h db-minnano-asobi.cuxbtjsy2nad.ap-northeast-1.rds.amazonaws.com -U postgres
