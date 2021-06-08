@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   before_action :logged_in_user, only: [:edit, :update, :index, :destroy]
   before_action :correct_user, only: [:edit, :update]
   before_action :set_user, only: [:show]
-  
+
   # GET /users or /users.json
   def index
     @users = User.all
@@ -57,7 +57,7 @@ class UsersController < ApplicationController
   #     format.json { head :no_content }
   #   end
   # end
-  
+
 
   private
     # Use callbacks to share common setup or constraints between actions.

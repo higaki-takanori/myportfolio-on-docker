@@ -33,12 +33,6 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-12">
-      <hr class="py-0 my-4 my-sm-5">
-    </div>
-  </div>
-
 <% else %>
   <div class="row">
     <div class="col-lg-4">
@@ -48,7 +42,7 @@
       <%= link_to "会員登録", new_user_path, class: "btn btn-info" %>
     </div>
   </div>
-  
+
   <div class="row">
     <div class="col-12">
       <hr class="py-0 my-4 my-sm-5">
@@ -60,9 +54,25 @@
       <h4 class="mb-4">ログインはこちら</h4>
     </div>
     <div class="col-lg-8">
-      <%= link_to "ログイン", login_path, class: "btn btn-success"  %>
+      <%= link_to "ログイン", login_path, class: "btn btn-success" %>
     </div>
   </div>
+
+  <div class="row">
+    <div class="col-12">
+      <hr class="py-0 my-4 my-sm-5">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-4">
+      <h4 class="mb-4">閲覧用</h4>
+    </div>
+    <div class="col-lg-8">
+      <%= link_to "ゲストログイン", guest_login_path, class: "btn btn-warning" %>
+    </div>
+  </div>
+
 <% end %>
 
 <div class="row">
