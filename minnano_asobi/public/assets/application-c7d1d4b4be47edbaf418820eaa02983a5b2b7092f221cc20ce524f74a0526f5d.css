@@ -1,0 +1,187 @@
+/* line 7, app/assets/stylesheets/likes.scss */
+.like-link {
+  text-decoration: none;
+}
+
+/* line 11, app/assets/stylesheets/likes.scss */
+.like-link:hover {
+  background-color: #fff !important;
+}
+
+/* line 15, app/assets/stylesheets/likes.scss */
+.like-btn {
+  font-size: 15px;
+  color: #808080;
+}
+
+/* line 20, app/assets/stylesheets/likes.scss */
+.unlike-btn {
+  font-size: 15px;
+  color: #e54747;
+}
+/* line 5, app/assets/stylesheets/plays.scss */
+.index {
+  list-style: none;
+  padding: 0;
+}
+
+/* line 10, app/assets/stylesheets/plays.scss */
+.index li {
+  overflow: auto;
+  padding: 10px, 0;
+}
+
+/* line 15, app/assets/stylesheets/plays.scss */
+.index .img {
+  float: left;
+}
+
+/* line 18, app/assets/stylesheets/plays.scss */
+.index .content {
+  margin-left: 10em;
+  width: auto !important;
+}
+
+/* line 22, app/assets/stylesheets/plays.scss */
+.index table {
+  width: auto !important;
+}
+
+/* line 26, app/assets/stylesheets/plays.scss */
+img {
+  max-width: 200px;
+  height: auto;
+}
+/* line 1, app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+}
+
+/* line 6, app/assets/stylesheets/scaffolds.scss */
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 11, app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 16, app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+
+/* line 19, app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+
+/* line 22, app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 26, app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 29, app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 32, app/assets/stylesheets/scaffolds.scss */
+div.field,
+div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 36, app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 39, app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 44, app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+/* line 51, app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+/* line 60, app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 64, app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 5, app/assets/stylesheets/users.scss */
+.user img {
+  max-width: 50px;
+  height: auto;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+/* @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+*/
+/* line 20, app/assets/stylesheets/application.scss */
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 25, app/assets/stylesheets/application.scss */
+.title {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ @import "bootstrap";
+ @import "bootstrap-sprockets";
+ */

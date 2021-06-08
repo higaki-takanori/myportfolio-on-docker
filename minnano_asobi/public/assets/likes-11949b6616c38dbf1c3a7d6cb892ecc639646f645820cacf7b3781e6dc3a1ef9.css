@@ -1,0 +1,21 @@
+/* line 7, app/assets/stylesheets/likes.scss */
+.like-link {
+  text-decoration: none;
+}
+
+/* line 11, app/assets/stylesheets/likes.scss */
+.like-link:hover {
+  background-color: #fff !important;
+}
+
+/* line 15, app/assets/stylesheets/likes.scss */
+.like-btn {
+  font-size: 15px;
+  color: #808080;
+}
+
+/* line 20, app/assets/stylesheets/likes.scss */
+.unlike-btn {
+  font-size: 15px;
+  color: #e54747;
+}

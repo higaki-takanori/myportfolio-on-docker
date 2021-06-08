@@ -1,0 +1,33 @@
+/* line 5, app/assets/stylesheets/plays.scss */
+.index {
+  list-style: none;
+  padding: 0;
+}
+
+/* line 10, app/assets/stylesheets/plays.scss */
+.index li {
+  overflow: auto;
+  padding: 10px, 0;
+}
+
+/* line 15, app/assets/stylesheets/plays.scss */
+.index .img {
+  float: left;
+}
+
+/* line 18, app/assets/stylesheets/plays.scss */
+.index .content {
+  margin-left: 10em;
+  width: auto !important;
+}
+
+/* line 22, app/assets/stylesheets/plays.scss */
+.index table {
+  width: auto !important;
+}
+
+/* line 26, app/assets/stylesheets/plays.scss */
+img {
+  max-width: 200px;
+  height: auto;
+}
