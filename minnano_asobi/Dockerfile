@@ -2,7 +2,7 @@ FROM ruby:2.7.1-alpine
 
 ARG WORKDIR
 
-ENV RUNTIME_PACKAGES="linux-headers libxml2-dev make gcc libc-dev nodejs tzdata postgresql-dev postgresql git nginx" \
+ENV RUNTIME_PACKAGES="linux-headers libxml2-dev make gcc libc-dev nodejs tzdata postgresql-dev postgresql git nginx yarn imagemagick" \
     DEV_PACKAGES="build-base curl-dev" \
     HOME=/${WORKDIR} \
     LANG=C.UTF-8 \
@@ -10,7 +10,7 @@ ENV RUNTIME_PACKAGES="linux-headers libxml2-dev make gcc libc-dev nodejs tzdata 
 
 # ENV test（このRUN命令は確認のためなので無くても良い）
 RUN echo ${HOME}
-RUN apk add nodejs yarn imagemagick 
+#RUN apk add nodejs yarn imagemagick
 
 WORKDIR ${HOME}
 
@@ -28,6 +28,22 @@ VOLUME /app/public
 VOLUME /app/tmp
 
 COPY . .
+
+RUN rm yarn.lock
+RUN rm -rf node_modules
+RUN yarn install --check-files
+RUN yarn upgrade
+
+RUN bundle exec rails webpacker:install
+run yarn add turbolinks jquery @rails/ujs @rails/activestorage @fortawesome/fontawesome-free bootstrap@4.2.1 popper.js
+RUN yarn install --check-files
+RUN yarn upgrade
+RUN bundle exec rails webpacker:compile
+RUN yarn install --check-files
+RUN yarn upgrade
+#assets:precompile
+#RUN bundle exec rails db:setup
+#RUN bundle exec rails db:migrate
 
 #CMD ["rails", "server", "-b", "0.0.0.0"]
 CMD bundle exec puma

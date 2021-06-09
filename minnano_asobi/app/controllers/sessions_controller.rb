@@ -5,7 +5,11 @@ class SessionsController < ApplicationController
   def guest_login
     @user = User.find_by(name: "guest")
     if !@user
-      guest_id = User.last.id + 1
+      if User.last.nil?
+        guest_id = 1
+      else
+        guest_id = User.last.id + 1
+      end
       @user = User.new(id: guest_id, name: "guest", email: "guest@gmail.com", password: "guestguest")
       @user.save
     end

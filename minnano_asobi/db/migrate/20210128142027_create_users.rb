@@ -6,7 +6,7 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.string :password_digest 
       t.string :remember_digest
       t.text :user_image_path
-      
+
       t.timestamps
     end
   end
