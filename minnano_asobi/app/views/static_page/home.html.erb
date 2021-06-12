@@ -14,7 +14,7 @@
       <h4 class="mb-4">遊びを探したい方</h4>
     </div>
     <div class="col-lg-8">
-      <%= link_to "遊びを探す", plays_path, class: "btn btn-info" %>
+      <%= link_to "遊びを探す", plays_path, class: "btn btn-info", data: {"turbolinks" => false} %>
     </div>
   </div>
 
@@ -29,7 +29,7 @@
       <h4 class="mb-4">遊びを作りたい方</h4>
     </div>
     <div class="col-lg-8">
-    <%= link_to "遊びを作る", new_play_path, class: "btn btn-success" %>
+    <%= link_to "遊びを作る", new_play_path, class: "btn btn-success", data: {"turbolinks" => false} %>
     </div>
   </div>
 
@@ -54,7 +54,7 @@
       <h4 class="mb-4">ログインはこちら</h4>
     </div>
     <div class="col-lg-8">
-      <%= link_to "ログイン", login_path, class: "btn btn-success" %>
+      <%= link_to "ログイン", login_path, class: "btn btn-success", data: {"turbolinks" => false} %>
     </div>
   </div>
 

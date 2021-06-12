@@ -8,7 +8,7 @@ $(function(){
     var inputCount = $('.rule-form .rule-list').length;
     if (inputCount < maxCount){
       var element = $('.rule-form .rule-list:last-child').clone(true);// 末尾をイベントごと複製
-      
+
       // 複製したinputのクリア
       var inputList = element[0].querySelectorAll('input[type="text"], textarea');
       var inputFile = element[0].querySelectorAll('input[type="file"]');

@@ -36,14 +36,7 @@ RUN yarn upgrade
 
 RUN bundle exec rails webpacker:install
 run yarn add turbolinks jquery @rails/ujs @rails/activestorage @fortawesome/fontawesome-free bootstrap@4.2.1 popper.js
-RUN yarn install --check-files
-RUN yarn upgrade
-RUN bundle exec rails webpacker:compile
-RUN yarn install --check-files
-RUN yarn upgrade
-#assets:precompile
-#RUN bundle exec rails db:setup
-#RUN bundle exec rails db:migrate
+RUN bundle exec rails webpacker:compile RAILS_ENV=production
 
-#CMD ["rails", "server", "-b", "0.0.0.0"]
-CMD bundle exec puma
+#CMD bundle exec rails s
+CMD bundle exec puma -e production -C config/puma.rb
