@@ -14,6 +14,10 @@ require("jquery")
 require("@fortawesome/fontawesome-free");
 require('bootstrap/dist/js/bootstrap.min.js')
 
+var jQuery = require('jquery')
+global.$ = global.jQuery = jQuery;
+window.$ = window.jQuery = jQuery;
+
 import '../stylesheets/application';
 import '@fortawesome/fontawesome-free/js/all';
 
