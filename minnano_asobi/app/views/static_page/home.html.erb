@@ -14,7 +14,7 @@
       <h4 class="mb-4">遊びを探したい方</h4>
     </div>
     <div class="col-lg-8">
-      <%= link_to "遊びを探す", plays_path, class: "btn btn-info" %>
+      <%= link_to "遊びを探す", plays_path, class: "btn btn-info", data: {"turbolinks" => false} %>
     </div>
   </div>
 
@@ -29,13 +29,7 @@
       <h4 class="mb-4">遊びを作りたい方</h4>
     </div>
     <div class="col-lg-8">
-    <%= link_to "遊びを作る", new_play_path, class: "btn btn-success" %>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-12">
-      <hr class="py-0 my-4 my-sm-5">
+    <%= link_to "遊びを作る", new_play_path, class: "btn btn-success", data: {"turbolinks" => false} %>
     </div>
   </div>
 
@@ -48,7 +42,7 @@
       <%= link_to "会員登録", new_user_path, class: "btn btn-info" %>
     </div>
   </div>
-  
+
   <div class="row">
     <div class="col-12">
       <hr class="py-0 my-4 my-sm-5">
@@ -60,9 +54,25 @@
       <h4 class="mb-4">ログインはこちら</h4>
     </div>
     <div class="col-lg-8">
-      <%= link_to "ログイン", login_path, class: "btn btn-success"  %>
+      <%= link_to "ログイン", login_path, class: "btn btn-success", data: {"turbolinks" => false} %>
     </div>
   </div>
+
+  <div class="row">
+    <div class="col-12">
+      <hr class="py-0 my-4 my-sm-5">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-4">
+      <h4 class="mb-4">閲覧用</h4>
+    </div>
+    <div class="col-lg-8">
+      <%= link_to "ゲストログイン", guest_login_path, class: "btn btn-warning" %>
+    </div>
+  </div>
+
 <% end %>
 
 <div class="row">

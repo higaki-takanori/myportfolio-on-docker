@@ -1,0 +1,5 @@
+/* line 5, app/assets/stylesheets/users.scss */
+.user img {
+  max-width: 50px;
+  height: auto;
+}

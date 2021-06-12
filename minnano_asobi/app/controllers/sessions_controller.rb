@@ -1,7 +1,22 @@
 class SessionsController < ApplicationController
   def new
   end
-  
+
+  def guest_login
+    @user = User.find_by(name: "guest")
+    if !@user
+      if User.last.nil?
+        guest_id = 1
+      else
+        guest_id = User.last.id + 1
+      end
+      @user = User.new(id: guest_id, name: "guest", email: "guest@gmail.com", password: "guestguest")
+      @user.save
+    end
+    log_in @user
+    redirect_back_or @user
+  end
+
   def create
     @user = User.find_by(email: params[:session][:email].downcase)
     if @user && @user.authenticate(params[:session][:password])

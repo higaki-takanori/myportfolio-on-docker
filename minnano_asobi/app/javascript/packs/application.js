@@ -3,16 +3,17 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
+//import "core-js/stable";
+//import "regenerator-runtime/runtime";
+
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 require("jquery")
-// require("bootstrap");
 require("@fortawesome/fontawesome-free");
 require('bootstrap/dist/js/bootstrap.min.js')
 
-// import 'bootstrap';
 import '../stylesheets/application';
 import '@fortawesome/fontawesome-free/js/all';
 
@@ -24,7 +25,9 @@ import '@fortawesome/fontawesome-free/js/all';
 // const imagePath = (name) => images(name, true)
 
 // form-rule
-require("form/add-rule-form.js")
+require("javascripts/form/add-rule-form.js");
 
 // user-tab
-require("users/user-tab.js")
+require("javascripts/users/user-tab.js");
+
+require('javascripts/test.js');
