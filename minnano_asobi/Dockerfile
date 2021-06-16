@@ -35,7 +35,7 @@ RUN yarn install --check-files
 RUN yarn upgrade
 
 RUN bundle exec rails webpacker:install
-run yarn add turbolinks jquery @rails/ujs @rails/activestorage @fortawesome/fontawesome-free bootstrap@4.2.1 popper.js
+RUN yarn add turbolinks jquery @rails/ujs @rails/activestorage @fortawesome/fontawesome-free bootstrap@4.2.1 popper.js
 RUN bundle exec rails webpacker:compile RAILS_ENV=production
 
 #CMD bundle exec rails s
