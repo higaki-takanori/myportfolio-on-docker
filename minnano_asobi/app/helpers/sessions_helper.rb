@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module SessionsHelper
   # 渡されたユーザーでログインする
   def log_in(user)
@@ -25,9 +27,9 @@ module SessionsHelper
     if (user_id = session[:user_id])
       @current_user ||= User.find_by(id: user_id)
     elsif (user_id = cookies.signed[:user_id])
-      #raise       # テストがパスすれば、この部分がテストされていないことがわかる
+      # raise       # テストがパスすれば、この部分がテストされていないことがわかる
       user = User.find_by(id: user_id)
-      if user && user.authenticated?(:remember, cookies[:remember_token])
+      if user&.authenticated?(:remember, cookies[:remember_token])
         log_in user
         @current_user = user
       end
@@ -57,5 +59,4 @@ module SessionsHelper
   def store_location
     session[:forwarding_url] = request.original_url if request.get?
   end
-
 end

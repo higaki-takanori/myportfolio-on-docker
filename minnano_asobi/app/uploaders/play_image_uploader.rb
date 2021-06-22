@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class PlayImageUploader < CarrierWave::Uploader::Base
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
@@ -15,10 +17,10 @@ class PlayImageUploader < CarrierWave::Uploader::Base
   end
 
   # Provide a default URL as a default if there hasn't been a file uploaded:
-  def default_url(*args)
+  def default_url(*_args)
     # For Rails 3.1+ asset pipeline compatibility:
     # ActionController::Base.helpers.asset_path("fallback/" + [version_name, "default_user.png"].compact.join('_'))
-    ActionController::Base.helpers.asset_path("default_play.png")
+    ActionController::Base.helpers.asset_path('default_play.png')
     # "/images/default_play.png"
     # "/images/" + [version_name, "default_play.png"].compact.join('_')
   end

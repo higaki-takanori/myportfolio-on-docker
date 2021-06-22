@@ -1,16 +1,17 @@
+# frozen_string_literal: true
+
 class SessionsController < ApplicationController
-  def new
-  end
+  def new; end
 
   def guest_login
-    @user = User.find_by(name: "guest")
-    if !@user
-      if User.last.nil?
-        guest_id = 1
-      else
-        guest_id = User.last.id + 1
-      end
-      @user = User.new(id: guest_id, name: "guest", email: "guest@gmail.com", password: "guestguest")
+    @user = User.find_by(name: 'guest')
+    unless @user
+      guest_id = if User.last.nil?
+                   1
+                 else
+                   User.last.id + 1
+                 end
+      @user = User.new(id: guest_id, name: 'guest', email: 'guest@gmail.com', password: 'guestguest')
       @user.save
     end
     log_in @user
@@ -19,7 +20,7 @@ class SessionsController < ApplicationController
 
   def create
     @user = User.find_by(email: params[:session][:email].downcase)
-    if @user && @user.authenticate(params[:session][:password])
+    if @user&.authenticate(params[:session][:password])
       log_in @user
       params[:session][:remember_me] == '1' ? remember(@user) : forget(@user)
       redirect_back_or @user
@@ -33,5 +34,4 @@ class SessionsController < ApplicationController
     log_out if logged_in?
     redirect_to root_url
   end
-
 end

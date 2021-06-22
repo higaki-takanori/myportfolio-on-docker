@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class LikesController < ApplicationController
   before_action :logged_in_user
   before_action :set_play
@@ -22,7 +24,8 @@ class LikesController < ApplicationController
   end
 
   private
-    def set_play
-      @play = Play.find(params[:play_id])
-    end
+
+  def set_play
+    @play = Play.find(params[:play_id])
+  end
 end
