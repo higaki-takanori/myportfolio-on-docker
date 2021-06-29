@@ -93,6 +93,11 @@ GEM
       dotenv (= 2.7.6)
       railties (>= 3.2)
     erubi (1.10.0)
+    factory_bot (6.2.0)
+      activesupport (>= 5.0.0)
+    factory_bot_rails (6.2.0)
+      factory_bot (~> 6.2.0)
+      railties (>= 5.0.0)
     ffi (1.15.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
@@ -275,6 +280,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   carrierwave
   dotenv-rails
+  factory_bot_rails
   jbuilder (~> 2.7)
   listen (~> 3.2)
   mini_magick
@@ -283,7 +289,7 @@ DEPENDENCIES
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.6)
   rails-i18n
-  rspec-rails
+  rspec-rails (~> 5.0.0)
   rubocop
   rubocop-rails
   sass-rails (>= 6)
