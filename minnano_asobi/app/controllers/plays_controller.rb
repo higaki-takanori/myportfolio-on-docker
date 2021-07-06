@@ -115,8 +115,7 @@ class PlaysController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def play_params
-    params.require(:play).permit(:title, :place, :outline, :winnig_content, :min_player, :max_player, :user_id,
-                                 :play_image_path, :deleted_at)
+    params.require(:play).permit(:title, :place, :outline, :winning_content, :min_player, :max_player, :user_id, :play_image_path, :deleted_at)
   end
 
   # Only allow a list of trusted parameters through.
