@@ -6,7 +6,7 @@ class CreatePlays < ActiveRecord::Migration[6.0]
       t.string :title
       t.string :place
       t.text :outline
-      t.text :winning_content
+      t.text :winnig_content
       t.integer :min_player
       t.integer :max_player
       t.bigint :user_id
