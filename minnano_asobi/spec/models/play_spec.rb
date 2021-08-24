@@ -24,12 +24,12 @@ RSpec.describe Play, type: :model do
 
   context 'max_player < 1 or 10 < max_player' do
     it 'is invalid' do
-      play.min_player = 0
+      play.max_player = 0
       play.valid?
-      expect(play.errors.of_kind?(:min_player, :inclusion)).to be_truthy
-      play.min_player = 11
+      expect(play.errors.of_kind?(:max_player, :inclusion)).to be_truthy
+      play.max_player = 11
       play.valid?
-      expect(play.errors.of_kind?(:min_player, :inclusion)).to be_truthy
+      expect(play.errors.of_kind?(:max_player, :inclusion)).to be_truthy
     end
   end
 end

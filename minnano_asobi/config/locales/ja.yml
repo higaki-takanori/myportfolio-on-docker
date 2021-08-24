@@ -11,7 +11,7 @@ ja:
         max_player: 最大人数
         title: タイトル
         outline: 概要
-        winnig_content: 勝利条件
+        winning_content: 勝利条件
         place: 場所
   errors:
     messages:

@@ -28,3 +28,9 @@ minnano_asobi/.byebug_history
 
 # Ignore master key for decrypting credentials and more.
 minnano_asobi/config/master.key
+
+# Ignore .env
+minnano_asobi/.env
+
+#ec2 key
+my-web-key.cer
