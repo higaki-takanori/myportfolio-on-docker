@@ -1,6 +1,7 @@
 FROM ruby:2.7.1-alpine
 
 ARG WORKDIR
+ARG PUMA_ENV
 
 ENV RUNTIME_PACKAGES="linux-headers libxml2-dev make gcc libc-dev nodejs tzdata postgresql-dev postgresql git nginx yarn imagemagick" \
     DEV_PACKAGES="build-base curl-dev" \
@@ -38,5 +39,7 @@ RUN bundle exec rails webpacker:install
 RUN yarn add turbolinks jquery @rails/ujs @rails/activestorage @fortawesome/fontawesome-free bootstrap@4.2.1 popper.js
 RUN bundle exec rails webpacker:compile RAILS_ENV=production
 
+RUN echo ${HOME}
+
 #CMD bundle exec rails s
-CMD bundle exec puma -e production -C config/puma.rb
+CMD bundle exec puma -e $PUMA_ENV -C config/puma.rb
