@@ -40,6 +40,8 @@ jobs:
         run: ls
       - name: check pwd
         run: pwd
+      - name: check bundle version
+        run: bundle version
       - name: Install chrome
         run: |
           wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
