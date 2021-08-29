@@ -40,12 +40,19 @@ jobs:
         run: ls
       - name: check pwd
         run: pwd
+      - name: Install chrome
+        run: |
+          wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
+          echo 'deb http://dl.google.com/linux/chrome/deb/ stable main' | tee /etc/apt/sources.list.d/google-chrome.list
+          apt update -y
+          apt install -y google-chrome-stable
       - name: Execute check
         env:
           RAILS_ENV: test
         shell: bash
         working-directory: ./minnano_asobi
         run: |
+          bundle update --bundler
           bundle config path vendor/bundle
           bundle install --jobs 4 --retry 3
           bundle exec rubocop
