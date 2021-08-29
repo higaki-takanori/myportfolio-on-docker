@@ -24,7 +24,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
       - name: check folder
-        run: ls
         run: ls ./minnano_asobi
       - name: Execute check
         working-directory: ./minnano_asobi
