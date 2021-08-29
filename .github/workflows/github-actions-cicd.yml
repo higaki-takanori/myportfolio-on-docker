@@ -10,6 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Cache gems
+        uses: actions/cache@v1
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-gem-${{ hashFiles('**/Gemfile.lock') }}
@@ -23,6 +24,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
       - name: Execute check
+        env:
+          RAILS_ENV: test
         shell: bash
         run: |
           bundle config path vendor/bundle
