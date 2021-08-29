@@ -29,8 +29,13 @@ jobs:
           RAILS_ENV: test
         shell: bash
         run: |
+          echo "aaa"
           bundle config path vendor/bundle
+          echo "bbb"
+
           bundle install --jobs 4 --retry 3
+          echo "ccc"
+
           bundle exec rubocop
           bundle exec rake db:setup
           yarn
