@@ -1,4 +1,4 @@
-name: Minnano-asobi-Deploy
+name: Minnano-asobi-cicd
 
 on:
   push:
@@ -7,26 +7,52 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    container:
+      image: ruby:2.6.4
+      env:
+        RAIL_ENV: test
+
+    services:
+      postgres:
+        image: postgres:12.3-alpine
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+
     steps:
       - uses: actions/checkout@v2
       - name: Cache gems
         uses: actions/cache@v1
+        working-directory: ./minnano_asobi
         with:
-          path: ./minnano_asobi/vendor/bundle
+          path: vendor/bundle
           key: ${{ runner.os }}-gem-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gem-
       - name: Cache node packages
         uses: actions/cache@v1
+        working-directory: ./minnano_asobi
         with:
-          path: ./minnano_asobi/node_modules
+          path: node_modules
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
       - name: check folder
-        run: ls ./minnano_asobi
+        run: ls
+      - name: check pwd
+        run: pwd
+      - name: Install chrome
+        run: |
+          wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
+          echo 'deb http://dl.google.com/linux/chrome/deb/ stable main' | tee /etc/apt/sources.list.d/google-chrome.list
+          apt update -y
+          apt install -y google-chrome-stable
+      - name: bundle install
+        run: |
+          gem install bundler
+          bundle install --path vendor/bundle --quiet --jobs 4 --retry 3
       - name: Execute check
-        working-directory: ./minnano_asobi
         env:
           RAILS_ENV: test
         shell: bash
