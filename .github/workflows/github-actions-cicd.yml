@@ -23,8 +23,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
       - name: Execute check
-        env:
-          RAILS_ENV: test
         shell: bash
         run: |
           bundle config path vendor/bundle
