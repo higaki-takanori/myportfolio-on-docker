@@ -7,8 +7,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      RAILS_ENV: test
     steps:
       - uses: actions/checkout@v2
       - name: Cache gems
@@ -25,6 +23,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
       - name: Execute check
+        env:
+          RAILS_ENV: test
         shell: bash
         run: |
           bundle config path vendor/bundle
