@@ -1,0 +1,42 @@
+name: Minnano-asobi-Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+      env:
+        RAILS_ENV: test
+    steps:
+    - uses: actions/checkout@v2
+    - name: Cache gems
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-gem-${{ hashFiles('**/Gemfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-gem-
+    - name: Cache node packages
+      uses: actions/cache@v1
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-yarn-
+    - name: Execute check
+        shell: bash
+        run: |
+          bundle config path vendor/bundle
+          bundle install --jobs 4 --retry 3
+          bundle exec rubocop
+          bundle exec rake db:setup
+          yarn
+          bundle exec rspec
+
+# jobs:
+#   deploy:
+#     needs: build
+#     if: github.ref == 'refs/heads/main'
+#     runs-on: ubuntu-latest
+#     steps:
