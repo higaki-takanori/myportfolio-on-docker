@@ -43,11 +43,6 @@ jobs:
       - name: check bundle version
         run: bundle version
       - name: Install chrome
-        uses: actions/cache@v1
-        with:
-          key: ${{ runner.os }}-chorme
-          restore-keys: |
-            ${{ runner.os }}-chorme-
         run: |
           wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
           echo 'deb http://dl.google.com/linux/chrome/deb/ stable main' | tee /etc/apt/sources.list.d/google-chrome.list
