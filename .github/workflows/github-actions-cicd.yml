@@ -2,7 +2,7 @@ name: Minnano-asobi-cicd
 
 on:
   push:
-    branches: [main]
+    # branches: [main]
 
 jobs:
   build:
