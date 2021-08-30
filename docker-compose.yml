@@ -16,6 +16,7 @@ services:
       context: ./minnano_asobi
       args:
         WORKDIR: app
+        DOCKER_RAILS_ENV: ${DOCKER_RAILS_ENV}
     environment:
       POSTGRES_PASSWORD: password
     volumes:
