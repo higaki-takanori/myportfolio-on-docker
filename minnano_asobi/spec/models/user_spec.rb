@@ -24,7 +24,7 @@ RSpec.describe User, type: :model do
 
   context 'emailの形式が正しい' do
     it 'is valid' do
-      user.email = "Guest@GMAIL.com"
+      user.email = "Guest1@GMAIL.com"
       expect(user).to be_valid
 
       user.email = "Guest_666@gmail.COM"
