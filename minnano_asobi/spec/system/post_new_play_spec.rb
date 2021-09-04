@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe "create new play", type: :system do
+RSpec.describe "create new play", type: :system, js: true do
   example 'guest user post new play' do
     visit guest_login_path
 
