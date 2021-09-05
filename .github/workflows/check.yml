@@ -1,0 +1,19 @@
+name: Minnano-asobi-ci
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: compose-run
+        shell: bash
+        env:
+          DOCKER_RAILS_ENV: ${{ secrets.DOCKER_RAILS_ENV }}
+        run: |
+          docker-compose up -d
+          docker-compose exec -T minnano_asobi sh createdb.sh
+          docker-compose exec -T minnano_asobi sh process_rspec.sh
