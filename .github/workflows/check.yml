@@ -1,4 +1,4 @@
-name: Minnano-asobi-ci
+name: check
 
 on:
   pull_request:
@@ -14,6 +14,6 @@ jobs:
         env:
           DOCKER_RAILS_ENV: ${{ secrets.DOCKER_RAILS_ENV }}
         run: |
-          docker-compose up -d
+          docker-compose up -d --build
           docker-compose exec -T minnano_asobi sh createdb.sh
           docker-compose exec -T minnano_asobi sh process_rspec.sh
