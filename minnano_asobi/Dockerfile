@@ -22,8 +22,8 @@ RUN apk update && \
     apk del build-dependencies
 
 # Expose volumes to frontend
-VOLUME /app/public
-VOLUME /app/tmp
+# VOLUME /app/public
+# VOLUME /app/tmp
 
 COPY . .
 
