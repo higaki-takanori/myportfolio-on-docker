@@ -14,5 +14,7 @@ jobs:
         env:
           DOCKER_RAILS_ENV: ${{ secrets.DOCKER_RAILS_ENV }}
         run: |
+          free -m
           docker-compose up -d --build
+          free -m
           docker-compose exec -T minnano_asobi sh github-actions/github-actions-process_rspec.sh
