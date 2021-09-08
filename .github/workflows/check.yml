@@ -19,4 +19,4 @@ jobs:
           docker-compose up -d --build
           free -m
           df -m
-          docker-compose exec -T minnano_asobi sh github-actions/github-actions-process_rspec.sh
+          docker-compose exec minnano_asobi sh github-actions/github-actions-process_rspec.sh
