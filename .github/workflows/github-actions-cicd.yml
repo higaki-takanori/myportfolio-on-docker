@@ -57,6 +57,7 @@ jobs:
       - name: Execute check
         env:
           RAILS_ENV: test
+          SELENIUM_DRIVER_URL: http://chrome:4444/wd/hub
         shell: bash
         working-directory: ./minnano_asobi
         run: |
