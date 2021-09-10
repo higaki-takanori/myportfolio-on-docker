@@ -1,4 +1,4 @@
-name: Minnano-asobi-cicd
+name: check-no-docker
 
 on:
   push:
@@ -60,10 +60,3 @@ jobs:
           bundle _2.2.19_ install --jobs 4 --retry 3
           bundle exec rails db:setup
           bundle exec rspec
-
-# jobs:
-#   deploy:
-#     needs: build
-#     if: github.ref == 'refs/heads/main'
-#     runs-on: ubuntu-latest
-#     steps:
