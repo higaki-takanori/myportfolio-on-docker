@@ -2,11 +2,11 @@ name: deploy-aws
 
 on:
   push:
-    # branches: [main]
+    branches: [main]
 
 jobs:
   deploy:
-    # if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
 
     steps:
@@ -47,7 +47,7 @@ jobs:
           # SSH接続して、git pullする
           echo "${{ secrets.GIT_PRIVATE_KEY }}" > private_key
           chmod 600 private_key
-          sshpass -p ${{ secrets.GIT_KEY_PASSWORD }} ssh -oStrictHostKeyChecking=no ${{ secrets.EC2_USER_NAME }}@${{ secrets.EC2_HOST_NAME }} -i private_key "cd /var/www/html/ && git fetch --prune && git checkout main && git pull origin main"
+          ssh -oStrictHostKeyChecking=no ${{ secrets.EC2_USER_NAME }}@${{ secrets.EC2_HOST_NAME }} -i private_key "docker-compose down && git fetch --prune && git checkout main && git pull origin main && docker-compose -f docker-compose.yml -f production.yml up -d"
 
           # SSHのセキュリティグループを閉じる
           aws ec2 revoke-security-group-ingress --group-id ${{ secrets.EC2_SECURITY_GROUP_ID }} --protocol tcp --port 22 --cidr ${{ steps.ip.outputs.ipv4 }}/32
