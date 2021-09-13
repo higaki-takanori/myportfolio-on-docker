@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  minnano_asobi:
+    image: app_minnano_asobi
+    build:
+      context: ./minnano_asobi
+      args:
+        WORKDIR: app
+        DOCKER_RAILS_ENV: production
+    volumes:
+      - ./minnano_asobi:/app
+
+  nginx:
+    image: nginx
+    build: nginx
+    ports:
+      - "80:80"
+    volumes_from:
+      - minnano_asobi
+    depends_on:
+      - minnano_asobi
