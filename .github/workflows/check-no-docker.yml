@@ -42,12 +42,6 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
-      - name: check folder
-        run: ls
-      - name: check pwd
-        run: pwd
-      - name: check bundle version
-        run: bundle version
       - name: Execute check
         env:
           RAILS_ENV: test
