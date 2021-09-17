@@ -5,6 +5,7 @@ ARG DOCKER_RAILS_ENV
 
 ENV RUNTIME_PACKAGES="linux-headers libxml2-dev make gcc libc-dev nodejs tzdata postgresql-dev postgresql git nginx yarn imagemagick" \
     DEV_PACKAGES="build-base curl-dev" \
+    YARN_ADD_LIST="turbolinks jquery @rails/ujs @rails/activestorage @fortawesome/fontawesome-free bootstrap@4.2.1 popper.js" $$ \
     HOME=/${WORKDIR} \
     RAILS_ENV=${DOCKER_RAILS_ENV} \
     LANG=C.UTF-8 \
@@ -33,7 +34,7 @@ RUN yarn install --check-files
 RUN yarn upgrade
 
 RUN bundle exec rails webpacker:install
-RUN yarn add turbolinks jquery @rails/ujs @rails/activestorage @fortawesome/fontawesome-free bootstrap@4.2.1 popper.js
+RUN yarn add ${YARN_ADD_LIST}
 RUN bundle exec rails webpacker:compile RAILS_ENV=${RAILS_ENV}
 
 #CMD bundle exec rails s

@@ -35,3 +35,5 @@ minnano_asobi/.env
 
 #ec2 key
 my-web-key.cer
+minnano-asobi-ec2-key
+minnano-asobi-key.cer
