@@ -8,7 +8,7 @@ services:
       args:
         WORKDIR: app
         DOCKER_RAILS_ENV: production
-    command: yarn install --check-files && bundle exec puma -e production -C config/puma.rb
+    command: yarn install --check-files && yarn upgrade && bundle exec puma -e production -C config/puma.rb
     volumes:
       - ./minnano_asobi:/app
 
