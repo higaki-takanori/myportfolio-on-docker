@@ -5,7 +5,7 @@ ARG DOCKER_RAILS_ENV
 
 ENV RUNTIME_PACKAGES="linux-headers libxml2-dev make gcc libc-dev nodejs tzdata postgresql-dev postgresql git nginx yarn imagemagick" \
     DEV_PACKAGES="build-base curl-dev" \
-    YARN_ADD_LIST="turbolinks jquery @rails/ujs @rails/activestorage @fortawesome/fontawesome-free bootstrap@4.2.1 popper.js" $$ \
+    YARN_ADD_LIST="turbolinks jQuery @rails/ujs @rails/activestorage @fortawesome/fontawesome-free bootstrap@4.2.1 popper.js" \
     HOME=/${WORKDIR} \
     RAILS_ENV=${DOCKER_RAILS_ENV} \
     LANG=C.UTF-8 \
@@ -28,14 +28,15 @@ RUN apk update && \
 
 COPY . .
 
-# RUN rm yarn.lock
-# RUN rm -rf node_modules
+RUN rm yarn.lock
+RUN rm -rf node_modules
 RUN yarn install --check-files
-RUN yarn upgrade
 RUN yarn add ${YARN_ADD_LIST}
+RUN yarn upgrade
 
 RUN bundle exec rails webpacker:install
 RUN bundle exec rails webpacker:compile RAILS_ENV=${RAILS_ENV}
 
+RUN yarn install --check-files
 # CMD bundle exec rails s
 # CMD bundle exec puma -e ${RAILS_ENV} -C config/puma.rb
