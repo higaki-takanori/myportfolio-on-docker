@@ -28,15 +28,15 @@ RUN apk update && \
 
 COPY . .
 
-RUN rm yarn.lock
-RUN rm -rf node_modules
-RUN yarn install --check-files
-RUN yarn add ${YARN_ADD_LIST}
-RUN yarn upgrade
+# RUN rm yarn.lock
+# RUN rm -rf node_modules
+# RUN yarn install --check-files
+# RUN yarn add ${YARN_ADD_LIST}
+# RUN yarn upgrade
 
 RUN bundle exec rails webpacker:install
 RUN bundle exec rails webpacker:compile RAILS_ENV=${RAILS_ENV}
 
-RUN yarn install --check-files
+# RUN yarn install --check-files
 # CMD bundle exec rails s
 # CMD bundle exec puma -e ${RAILS_ENV} -C config/puma.rb
