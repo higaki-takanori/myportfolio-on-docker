@@ -37,3 +37,7 @@ minnano_asobi/.env
 my-web-key.cer
 minnano-asobi-ec2-key
 minnano-asobi-key.cer
+
+# .ssh
+.ssh
+.bash*
