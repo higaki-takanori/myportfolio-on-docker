@@ -33,10 +33,8 @@ minnano_asobi/config/master.key
 minnano_asobi/.env
 .env
 
-#ec2 key
-my-web-key.cer
-minnano-asobi-ec2-key
-minnano-asobi-key.cer
+#aws key
+aws-key/*
 
 # .ssh
 .ssh
