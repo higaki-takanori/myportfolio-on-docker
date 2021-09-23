@@ -34,7 +34,7 @@ minnano_asobi/.env
 .env
 
 #aws key
-aws-key/*
+aws-key/
 
 # .ssh
 .ssh
