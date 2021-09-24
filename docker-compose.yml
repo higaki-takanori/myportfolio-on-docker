@@ -29,7 +29,7 @@ services:
     environment:
       POSTGRES_PASSWORD: password
       SELENIUM_DRIVER_URL: http://chrome:4444/wd/hub
-    command: /bin/sh -c "bundle exec puma -e production -C config/puma.rb"
+    command: /bin/sh -c "bundle exec rails webpacker:compile RAILS_ENV=${DOCKER_RAILS_ENV} && bundle exec puma -e production -C config/puma.rb"
     volumes:
       - ./minnano_asobi:/app
     depends_on:
