@@ -1,7 +1,6 @@
 # **みんなの遊び**
 
-URL
-[みんなの遊び](ec2-54-64-100-9.ap-northeast-1.compute.amazonaws.com)
+URL([みんなの遊び](ec2-54-64-100-9.ap-northeast-1.compute.amazonaws.com))
 
 ## 機能
 
@@ -34,10 +33,33 @@ URL
 - b
 - c
 
+## 使用技術
 
-## 環境
+### フロントエンド
 
-### 開発環境
+- jQuery *.*.*
+- javascript *.*.*
+
+### バックエンド
+
+- rails *.*.*
+- ruby *.*.*
+
+### インフラ
+
+- docker *.*.* / docker-compose *.*.*
+- postgresql *.*.*
+- nginx *.*.*
+- AWS()
+- Github Actions(CICDに使用)
+
+## インフラ構成図
+
+## DB
+
+### ER図
+
+
 
 ### 本番環境
 
