@@ -2,6 +2,37 @@
 
 URL([みんなの遊び](https://ec2-54-64-100-9.ap-northeast-1.compute.amazonaws.com))
 
+**TOP画像をここに挿入する。
+
+## 使用技術
+
+### フロントエンド
+
+- jQuery
+- javascript
+
+### バックエンド
+
+- rails 6.0.3.7
+- ruby 2.7.1p83
+- RSpec(テスト)
+
+### インフラ
+
+- docker 20.10.5 / docker-compose 1.29.0
+- postgresql
+- nginx
+- AWS(EC2,VPC,RDS)
+- Github Actions(CICDに使用)
+
+## インフラ構成図
+
+![deploy_aws-インフラ構成図 drawio](https://user-images.githubusercontent.com/72510245/135292458-5897c231-94e9-4d62-bf75-7e3b0fe9c596.png)
+
+## DB
+
+![deploy_aws-ER図 drawio](https://user-images.githubusercontent.com/72510245/135292649-265fb17a-75ef-4708-8047-3fa3660311d7.png)
+
 ## 機能
 
 ### ログイン前の機能
@@ -46,32 +77,3 @@ URL([みんなの遊び](https://ec2-54-64-100-9.ap-northeast-1.compute.amazonaw
 - ユーザーの一覧表示
 - 各ユーザーが投稿した遊びの一覧表示
 - 自分のユーザー情報の修正
-
-## 使用技術
-
-### フロントエンド
-
-- jQuery
-- javascript
-
-### バックエンド
-
-- rails 6.0.3.7
-- ruby 2.7.1p83
-- RSpec(テスト)
-
-### インフラ
-
-- docker 20.10.5 / docker-compose 1.29.0
-- postgresql
-- nginx
-- AWS(EC2,VPC,RDS)
-- Github Actions(CICDに使用)
-
-## インフラ構成図
-
-![deploy_aws-インフラ構成図 drawio](https://user-images.githubusercontent.com/72510245/135292458-5897c231-94e9-4d62-bf75-7e3b0fe9c596.png)
-
-## DB
-
-![deploy_aws-ER図 drawio](https://user-images.githubusercontent.com/72510245/135292649-265fb17a-75ef-4708-8047-3fa3660311d7.png)
