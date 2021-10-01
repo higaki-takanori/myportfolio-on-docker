@@ -1,8 +1,6 @@
 # **みんなの遊び**
 
-URL([みんなの遊び](https://ec2-54-64-100-9.ap-northeast-1.compute.amazonaws.com))
-
-**TOP画像をここに挿入する。
+URL([みんなの遊び](http://minnano-asobi.link/))
 
 ## 使用技術
 
