@@ -35,7 +35,3 @@ RUN yarn upgrade
 
 RUN bundle exec rails webpacker:install
 RUN bundle exec rails webpacker:compile RAILS_ENV=${RAILS_ENV}
-
-# RUN yarn install --check-files
-# CMD bundle exec rails s
-# CMD bundle exec puma -e ${RAILS_ENV} -C config/puma.rb
