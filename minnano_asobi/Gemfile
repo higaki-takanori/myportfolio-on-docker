@@ -43,6 +43,8 @@ gem 'will_paginate',           '3.1.7'
 # 画像アップローダー
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'fog-aws'
+
 # gem 'rmagick', '~> 4.2', '>= 4.2.2'
 
 # 環境変数の管理(.env)
