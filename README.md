@@ -2,6 +2,12 @@
 
 URL([みんなの遊び](https://minnano-asobi.link/))
 
+## イメージ図
+
+![630775C9-7756-443B-B2A2-A2502A554298_1_105_c](https://user-images.githubusercontent.com/72510245/135740487-1c227be6-0ce1-4505-a1b1-f79e0468b5c1.jpeg)
+
+![2C6E975B-8D28-4801-9733-D34155B1546D_1_105_c](https://user-images.githubusercontent.com/72510245/135740488-629850e7-5518-4e5f-8032-bc99df5e8f64.jpeg)
+
 ## 使用技術
 
 ### フロントエンド
