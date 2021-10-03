@@ -1,6 +1,6 @@
 # **みんなの遊び**
 
-URL([みんなの遊び](http://minnano-asobi.link/))
+URL([みんなの遊び](https://minnano-asobi.link/))
 
 ## 使用技術
 
@@ -25,7 +25,7 @@ URL([みんなの遊び](http://minnano-asobi.link/))
 
 ## インフラ構成図
 
-![deploy_aws-インフラ構成図 drawio](https://user-images.githubusercontent.com/72510245/135292458-5897c231-94e9-4d62-bf75-7e3b0fe9c596.png)
+![deploy_aws-インフラ構成図 drawio (1)](https://user-images.githubusercontent.com/72510245/135740030-8215f4a9-31e8-41ba-8b93-f301b2904efe.png)
 
 ## DB
 
