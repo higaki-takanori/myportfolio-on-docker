@@ -1,9 +1,8 @@
 # **みんなの遊び**
 
 現在非公開としております。
-~~
-URL([みんなの遊び](https://minnano-asobi.link/))
-~~
+
+~~URL([みんなの遊び](https://minnano-asobi.link/))~~
 
 ## 概要
 
